@@ -84,3 +84,38 @@ print(resultado)
 # divmod(x, y) retorna uma tupla com (quociente, resto)
 quociente, resto = divmod(20, 6)
 print(quociente, resto)
+
+# Aula - 6 - módulo math
+
+import math  # Importa o módulo math para realizar operações matemáticas mais avançadas
+
+numero = 16
+raiz_qd = math.sqrt(numero)  # Calcula a raiz quadrada de 16
+print(raiz_qd)
+
+numero = 5
+fatorial = math.factorial(5)  # Calcula o fatorial de 5 (5! = 120)
+print(fatorial)
+
+numero = 100
+logaritmo = math.log10(numero)  # Calcula o logaritmo de base 10 de 100 (resultado: 2.0)
+print(logaritmo)
+
+print(math.pi)  # Mostra o valor de PI (constante matemática)
+
+seno = math.sin(10)  # Calcula o seno de 10 radianos
+print(seno)
+
+# Aula 7 – Notação científica e precisão
+
+num_grande = 1.5e6  # Representa 1.500.000 usando notação científica
+num_peq = 2.5e-3  # Representa 0.0025 usando notação científica
+
+print(num_grande)
+print(num_peq)
+
+resultado = num_grande + num_peq  # Soma os dois números; útil para mostrar limites de precisão
+print(resultado)
+
+# Formata o número em notação científica com 4 casas decimais
+print(f"O número é {num_grande:.4e}")
